@@ -10,7 +10,7 @@ export default memo(function SYQHotPlayer() {
       <div className="content">
         {hotRadios.map((item: any, index: number) => {
           return (
-            <div className="content-item">
+            <div className="content-item" key={index}>
               <img src={item.picUrl} alt="图片"></img>
               <span className="name">{item.name}</span>
               <span className="position">{item.position}</span>

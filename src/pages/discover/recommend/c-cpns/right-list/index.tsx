@@ -32,7 +32,7 @@ export default memo(function SYQRightList() {
           {rightListData[0] &&
             rightListData.map((item: any, index: number) => {
               return (
-                <div className="singer-content-item">
+                <div className="singer-content-item" key={index}>
                   <img src={item.picUrl} alt="图片"></img>
                   <span className="singer-content-name">{item.name}</span>
                 </div>
